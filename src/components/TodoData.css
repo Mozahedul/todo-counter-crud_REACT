@@ -1,0 +1,36 @@
+.TodoData {
+  background-color: lightgray;
+  padding: 10px;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.TodoData > h3 {
+  word-wrap: break-word;
+}
+
+.TodoData > button {
+  background-color: white;
+  padding: 4px 7px;
+  color: red;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  font-size: 16px;
+}
+
+.TodoData > button:hover {
+  background-color: red;
+  color: white;
+}

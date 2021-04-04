@@ -1,0 +1,10 @@
+.Counter > button {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  background-color: rgb(138, 138, 138);
+}
+
+.Counter-BtnSub {
+  margin-left: 5px;
+}
