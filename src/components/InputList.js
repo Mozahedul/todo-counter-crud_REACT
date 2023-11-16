@@ -8,7 +8,7 @@ const InputList = () => {
 
   console.log(input);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = event => {
     event.preventDefault();
     dispatch({
       type: "ADD_TO_LIST",
@@ -20,10 +20,14 @@ const InputList = () => {
     });
   };
 
+  const handleInput = event => {
+    setInput(event.target.value);
+  };
+
   return (
     <div className="InputList">
       <form onSubmit={handleSubmit}>
-        <input type="text" onChange={(e) => setInput(e.target.value)} />
+        <input type="text" onChange={handleInput} placeholder="Add todo list" />
         <button type="submit">Add List</button>
       </form>
     </div>

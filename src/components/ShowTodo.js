@@ -10,7 +10,7 @@ const ShowTodo = () => {
     const tempData = localStorage.getItem("todoItem");
     const data = JSON.parse(tempData);
     if (data) {
-      data.map((item) =>
+      data.map(item =>
         dispatch({
           type: "ADD_TO_LIST",
           item: item,
@@ -26,7 +26,8 @@ const ShowTodo = () => {
 
   return (
     <div className="ShowTodo">
-      {todoList.map((listItem) => (
+      <h3 style={{ marginTop: "10px" }}>Todo list</h3>
+      {todoList.map(listItem => (
         <TodoData
           key={listItem.id}
           name={listItem.name}
