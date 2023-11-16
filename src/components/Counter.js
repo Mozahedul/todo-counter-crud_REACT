@@ -3,7 +3,7 @@ import { useStoreValue } from "../app/Store";
 import "./Counter.css";
 
 const Counter = () => {
-  const [, dispatch] = useStoreValue();
+  const [{ counter }, dispatch] = useStoreValue();
 
   const increment = () => {
     dispatch({
@@ -12,6 +12,10 @@ const Counter = () => {
   };
 
   const decrement = () => {
+    if (counter < 1) {
+      alert("The value should not be < 1");
+      return true;
+    }
     dispatch({
       type: "SUB_NUMBER",
     });

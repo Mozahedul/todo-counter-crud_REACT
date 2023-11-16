@@ -1,8 +1,17 @@
 .Counter > button {
   border: none;
   outline: none;
-  padding: 8px 12px;
-  background-color: rgb(138, 138, 138);
+  padding: 5px 6px;
+  background-color: rgb(51, 170, 110);
+  border-radius: 4px;
+  color: rgb(235, 234, 234);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.Counter > button:hover {
+  color: rgb(51, 170, 110);
+  background-color: white;
 }
 
 .Counter-BtnSub {

@@ -14,8 +14,8 @@ function App() {
           <Counter />
         </div>
         <div className="App-Input">
-          <ShowTodo />
           <InputList />
+          <ShowTodo />
         </div>
       </div>
     </div>

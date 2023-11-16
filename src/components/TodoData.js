@@ -13,7 +13,6 @@ const TodoData = ({ name, done, id }) => {
   };
   return (
     <div className="TodoData">
-      <p></p>
       <h3>{name}</h3>
       <button onClick={removeHandle} title="Remove List">
         x

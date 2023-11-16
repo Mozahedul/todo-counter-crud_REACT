@@ -3,10 +3,15 @@
   place-items: center;
   width: 100vw;
   height: 100vh;
+  background-image: url("./assets/background.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .App-Container {
-  background-color: lightgray;
+  background-color: rgb(236, 234, 234);
+  border-radius: 15px;
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,6 +29,7 @@
 .App-Input {
   background-color: rgb(216, 233, 231);
   padding: 15px;
+  border-radius: 10px;
 }
 
 .App-Counter {

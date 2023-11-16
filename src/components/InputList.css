@@ -3,8 +3,9 @@
   display: -ms-flexbox;
   display: flex;
   background-color: white;
-  padding: 10px;
+  padding: 4px;
   margin-top: 15px;
+  border-radius: 4px;
 }
 
 .InputList input {
@@ -21,12 +22,14 @@
 .InputList button {
   border: none;
   outline: none;
-  padding: 10px;
-  background-color: lightgray;
+  padding: 6px;
+  border-radius: 4px;
+  background-color: rgb(87, 87, 87);
   cursor: pointer;
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  color: white;
 }
 
 .InputList button:hover {
